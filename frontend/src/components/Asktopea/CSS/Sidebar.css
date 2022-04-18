@@ -1,0 +1,79 @@
+.sidebar{
+    display:flex;
+    padding: 20px 0px 10px 50px;
+    height: 100%;
+    flex: 0.5;
+    max-width: 200px;
+    border-right: 1px solid #ddd;
+    background-color: rgba(220, 236, 236, 0.348);
+    /* box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.178); */
+}
+.sidebar-container{
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+}
+.sidebar-options{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: fixed;
+}
+.sidebar-option{
+    display: flex;
+    margin: 10px 0;
+    flex-direction: column;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+}
+
+a:hover{
+    color: #000;
+}
+
+.sidebar-option>p{
+    color: rgba(0,0,0,0.5);
+    font-size: 14px;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+}
+.link-tag{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    width: 100%;
+}
+.link-tag:hover{
+    border-right: 5px solid rgba(105, 165, 239, 0.825);
+}
+.link-tag>.MuiSvgIcon-root{
+    font-size: 18px;
+    margin-right: 5px;
+    color: rgba(105, 165, 239, 0.825);
+
+}
+.tags{
+    display: flex;
+    flex-direction: column;
+    color: rgba(0,0,0,0.5);
+    margin: 0px 20px;
+}
+.tags>p{
+    margin: 5px 0px;
+}
+.tags>p:hover{
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+      padding: 5px 0px 10px 15px;
+      max-width: 130px;
+      /* flex-wrap: wrap; */
+    }
+  }
