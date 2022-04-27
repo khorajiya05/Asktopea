@@ -11,14 +11,14 @@ function Sidebar() {
       <div className="sidebar-container">
         <div className="sidebar-options">
           <div className="sidebar-option">
-            <Link to="/">Home</Link>
+            <Link id="sidebar-a" to="/">Home</Link>
           </div>
           <div className="sidebar-option">
             <p>PUBLIC</p>
             <div className="link">
               <div className="link-tag">
                 <PublicIcon />
-                <Link to="/">Question</Link>
+                <Link id="sidebar-a" to="/">Question</Link>
               </div>
 
               <div className="tags">
@@ -32,14 +32,14 @@ function Sidebar() {
             <div className="link">
               <div className="link-tag">
                 <StarsIcon />
-                <Link to="/">Explore</Link>
+                <Link id="sidebar-a" to="/">Explore</Link>
               </div>
             </div>
           </div>
           <div className="sidebar-option">
             <p>FIND A JOB</p>
             <div className="link">
-              <Link
+              <Link id="sidebar-a"
                 style={{
                   margin: "10px 20px",
                 }}
@@ -47,7 +47,7 @@ function Sidebar() {
               >
                 Jobs
               </Link>
-              <Link
+              <Link id="sidebar-a"
                 style={{
                   marginLeft: "20px",
                 }}
@@ -61,7 +61,7 @@ function Sidebar() {
             <p>TEAMS</p>
             <div className="link-tag">
               <WorkIcon />
-              <Link to="/">Companies</Link>
+              <Link id="sidebar-a" to="/">Companies</Link>
             </div>
           </div>
         </div>

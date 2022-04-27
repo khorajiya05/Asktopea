@@ -38,6 +38,7 @@ function main({ questions }) {
           {questions.map((_q) => (
             <div className="question">
               <AllQuestions question = {_q} />
+              {/* <p>{_q?.tags}</p> */}
             </div>
           ))}
         </div>

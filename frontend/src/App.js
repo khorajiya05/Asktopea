@@ -15,7 +15,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { auth } from "./firebase";
 import { login, logout, selectUser } from "./features/userSlice";
 import {useEffect} from "react";
-
+import ResetPassword from "./components/Auth/ResetPassword";
+import Profile from "./components/Profile";
 
 function App() {
   const user = useSelector(selectUser);
@@ -69,7 +70,9 @@ function App() {
             path={user ? "/" : "/auth"}
             component={user ? Asktopea : Auth}
           />
-          <PrivateRoute path="/" component={Asktopea} />
+          <Route exact path="/reset-password" component={ResetPassword} />
+          <Route exact path={"/profile"} component={Profile} />
+          <PrivateRoute exact path="/" component={Asktopea} />
           <PrivateRoute exact path="/question" component={ViewQuestion} />
           <PrivateRoute exact path="/add-question" component={Question} />
         </Switch>

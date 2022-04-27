@@ -4,8 +4,9 @@ header {
   position: sticky;
   top: 0px;
   z-index: 1000;
-  /* min-height: 5vh; */
-  max-height: 8vh;
+  
+  height: 8vh;
+  
 }
 .header-container {
   display: flex;
@@ -15,24 +16,27 @@ header {
   justify-content: space-around;
   background-color: rgb(209, 224, 224);
   box-shadow: 0px 0.5px 8px rgba(0, 0, 0, 0.178);
+  position: fixed;
+  height: 60px;
 }
 .header-left {
   display: flex;
+  max-height: 55px;
   flex-direction: row;
   align-items: center;
-  margin: 0 10px;
 }
-.header-left > h3 {
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0px 10px;
-  cursor: pointer;
-  padding: 5px 10px;
+.header-left > a{
+  text-decoration: none;
 }
-.header-left > h3:hover {
-  border-radius: 33px;
-  background-color: white;
+#title{
+  color:rgba(0, 0, 0, 0.719);
+  font-weight: bold;
+  font-size: 34px;
 }
+#title:hover{
+  color:rgba(0, 0, 0, 0.501);
+}
+
 .header-middle {
   display: flex;
   flex-direction: row;
@@ -57,26 +61,33 @@ header {
 }
 .header-right {
   display: flex;
+  flex-direction: row;
+  max-height: 55px;
 }
 .header-right > .header-right-container {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  /* min-width: 200px; */
+  justify-content: space-between;
   padding: 5px 10px;
 }
-.header-right-container > .MuiSvgIcon-root {
-  color: rgba(0, 0, 0, 0.534);
-  padding: 10px 5px;
-  margin: 0px 5px;
+/* .header-right-container > #logout{
+  font-size: medium;
+  font-weight: bold;
+}
+.header-right-container > #logout :hover{
   cursor: pointer;
-}
-.header-right-container > .MuiSvgIcon-root:hover {
-  background-color: #ddd;
-  color: #000;
-}
+} */
 
 .avtar{
   cursor: pointer;
+  margin-top: 3px;
+  /* border: 1px solid rgba(0, 0, 0, 0.536);
+  border-radius: 100%; */
 }
+
+
+
 @media screen and (max-width: 768px) {
   .header-middle {
     display: none;

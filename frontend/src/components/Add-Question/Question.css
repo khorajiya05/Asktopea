@@ -84,6 +84,9 @@
   margin: 10px 0px 50px 0px;
   border-radius: 10px;
 }
+.ql-syntax{
+  width: fit-content;
+}
 .ql-editor:focus {
       
     /* border: 1px solid #0054ff; */
@@ -104,8 +107,8 @@
   }
 
 .button {
-  max-width: fit-content;
-  margin: -20px 0px 50px -44%;
+  margin: 20px 0 20px 0;
+  
 }
 
 button:hover {

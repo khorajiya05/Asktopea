@@ -1,0 +1,59 @@
+.main1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-top: 20px;
+  /* align-items: flex-en; */
+  max-width: 60vw;
+}
+
+.author > small {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+  }
+  
+  .author-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .author-details > p {
+    margin-left: 10px;
+    font-size: small;
+    color: #0151f0d8;
+
+  }
+
+  .main-answer{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .react-quill1{
+    width: 70vw;
+  }
+  .ql-syntax{
+    background-color: white;
+    border: 1px solid rgb(125, 130, 143);
+    width: 100%;
+    max-height: 600px;
+    padding: 15px 15px 15px 15px;
+  }
+
+  .ql-container{
+    height: 150px;
+    margin-bottom: 30px;
+  }
+
+
+
+.auth-details{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+

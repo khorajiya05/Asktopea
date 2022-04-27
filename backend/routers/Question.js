@@ -146,10 +146,11 @@ router.get("/", async (req, res) => {
           {
             $project: {
               _id: 1,
-              // user_id: 1,
+              question_id: 1,
+              user: 1,
               comment: 1,
+              // user_id: 1,
               created_at: 1,
-              // question_id: 1,
             },
           },
         ],

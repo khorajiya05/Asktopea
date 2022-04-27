@@ -2,15 +2,16 @@
     display: flex;
     /* max-width: 700px; */
     padding: 30px 10px;
-    flex: 0.75;
+    flex: 0.5;
     flex-direction: column;
+    align-items: center;
     margin: auto;
   }
   
   .main-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 120%;
   }  
   .main-top {
     display: flex;
@@ -25,6 +26,10 @@
     font-weight: 400;
     font-size: 25px;
     color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .main-tab > a {
+    text-decoration: none;
   }
   
   button {
@@ -47,9 +52,10 @@
     padding: 0px 0px 10px 0px;
     border-bottom: 1px solid #ddd;
     margin-top: 10px;
+    width: 100%;
   }
   
-  .main-filter {
+  .main-filter{
     display: flex;
     align-items: center;
   }
@@ -101,12 +107,49 @@
     flex-wrap: wrap;
   }
   
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     .main {
       /* display: flex;
     max-width: 700px;
     padding: 30px 10px; */
-      flex: 0.6;
+    /* margin-right: 20px; */
+    margin-top: 6px;
+    min-width: 100px;
+    }
+  }
+
+  @media screen and (max-width: 607px){
+    .main{
+      margin-top: 6px;
+      margin-left: 25px;
+      align-items:flex-start;
+     
+    }
+    .main-top {
+      display: flex;
+      flex-direction: row;
+      min-width: 70vw;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .main-desc {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1.1rem;
+      color: rgba(0, 0, 0, 0.8);
+      justify-content: space-between;
+      padding: 0px 0px 10px 0px;
+      border-bottom: 1px solid #ddd;
+      margin-top: 10px;
+      min-width: 70vw;
+    }
+    .questions {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-width: 70vw;
     }
   }
   

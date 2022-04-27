@@ -7,7 +7,7 @@ import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../features/userSlice";
 import axios from "axios";
-import { useState } from "react"
+import { useState } from "react";
 
 function Question() {
   const user = useSelector(selectUser);
@@ -27,7 +27,7 @@ function Question() {
     e.preventDefault();
 
     if (title !== "" && body !== "") {
-      setLoading(true)
+      setLoading(true);
       const bodyJson = {
         title: title,
         body: body,
@@ -39,8 +39,8 @@ function Question() {
         .post("/api/question", bodyJson)
         .then((res) => {
           alert("Question added successfully");
-          setLoading(false)
-          history.push("/")
+          setLoading(false);
+          history.push("/");
         })
         .catch((err) => {
           console.log(err);
@@ -104,17 +104,17 @@ function Question() {
             </div>
           </div>
         </div>
+        <div className="head-title">
+          <button
+            type="submit"
+            disabled={loading}
+            onClick={handleSubmit}
+            className="button"
+          >
+            {loading ? "Adding question..." : "Add question"}
+          </button>
+        </div>
       </div>
-      {/* <div className="buttons"> */}
-      <button
-        type="submit"
-        disabled={loading}
-        onClick={handleSubmit}
-        className="button"
-      >
-        {loading ? "Adding question..." : "Add question"}
-      </button>
-      {/* </div> */}
     </div>
   );
 }

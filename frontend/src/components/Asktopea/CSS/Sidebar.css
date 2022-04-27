@@ -16,7 +16,7 @@
 .sidebar-options{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 150px;
     position: fixed;
 }
 .sidebar-option{
@@ -25,12 +25,12 @@
     flex-direction: column;
     font-size: 14px;
 }
-a{
+#sidebar-a{
     text-decoration: none;
     color: rgba(0,0,0,0.5);
 }
 
-a:hover{
+#sidebar-a:hover{
     color: #000;
 }
 
@@ -70,10 +70,23 @@ a:hover{
     color: #000;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 950px) {
+    .sidebar{
+        max-width: 160px;
+        min-width: 100px;
+    }
+} */
+
+@media screen and (max-width: 950px) {
     .sidebar {
       padding: 5px 0px 10px 15px;
       max-width: 130px;
+      min-width: 100px;
       /* flex-wrap: wrap; */
     }
   }
+@media screen and (max-width: 607px){
+    .sidebar{
+        display: none;
+    }
+}

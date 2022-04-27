@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
     })
     .catch((err) => {
       res.status(400).send({
-        message: "Answer not added successfully",
+        message: "Answer not added",
       });
     });
 });
